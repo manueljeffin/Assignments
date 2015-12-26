@@ -2,10 +2,15 @@
 #include<stdlib.h>
 int main()
 {	
-	int a[10][10];
+	int **a;
 	int t,sz,i,j,dsz;
 	printf("Enter size of matrix:\t");
 	scanf("%d",&sz);
+	*a=(int**)malloc(sz*sizeof(int));
+	for(i=0;i<sz;i++)
+	{
+		a[i]=(int*)malloc(sz*sizeof(int));
+	}
 	printf("Enter matrix elements\n");
 	for(i=0;i<sz;i++)
 	{
