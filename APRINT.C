@@ -14,7 +14,7 @@ int main()
 		scanf("%d",&tmcnt);
 		while(tmcnt>0)
 		{
-			if(tacnt/3>=acnt)
+			if((tacnt/3>=acnt)&&(tmcnt>=3))
 			{
 				acnt=tacnt;
 				tacnt*=2;
